@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "inception_v3_t"
-version = "0.1.0.dev2"
+version = "1.0.0"
 description = "Inception V3 model made in keras/tensorflow"
 authors = ["Piotr Gawron <gawron.pio@gmail.com>"]
 readme = "README.md"
@@ -23,9 +23,9 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.11 <3.12"
-tensorflow = "2.15.1"
-numpy = "^1.26.4"
+python = ">=3.10"
+tensorflow = "*"
+numpy = "*"
 
 
 [tool.poetry.group.dev.dependencies]
