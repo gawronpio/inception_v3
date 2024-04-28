@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "inception_v3_t"
+version = "1.0.0"
+description = "Inception V3 model made in keras/tensorflow"
+authors = ["Piotr Gawron <gawron.pio@gmail.com>"]
+readme = "README.md"
+license = "MIT License"
+repository = "https://github.com/gawronpio/inception_v3_t.git"
+homepage = "https://github.com/gawronpio/inception_v3_t"
+classifiers = [
+        "Development Status :: 3 - Alpha",
+        "Environment :: Console",
+        "Natural Language :: English",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.11"
+]
+packages = [{include = "inception"}]
+include = [
+    "CHANGELOG.md",
+    "README.md",
+    "inception",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+tensorflow = "*"
+numpy = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+pydotplus = "^2.0.2"
+graphviz = "^0.20.3"
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
